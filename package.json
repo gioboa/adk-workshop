@@ -6,14 +6,18 @@
   "main": "src/currency-agent/agent.ts",
   "scripts": {
     "start": "adk run ./src/currency-agent/agent.ts",
-    "web": "adk web ./src/currency-agent"
+    "web": "adk web ./src/currency-agent",
+    "mcp": "node ./src/mcp-server/server.ts",
+    "mcp:inspect": "npx -y @modelcontextprotocol/inspector"
   },
   "license": "MIT",
   "dependencies": {
     "@google/adk": "1.1.0",
+    "@modelcontextprotocol/sdk": "1.29.0",
     "zod": "4.4.3"
   },
   "devDependencies": {
-    "@google/adk-devtools": "1.1.0"
+    "@google/adk-devtools": "1.1.0",
+    "@types/node": "25.9.1"
   }
 }

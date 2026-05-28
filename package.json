@@ -1,0 +1,19 @@
+{
+  "name": "currency-agent",
+  "version": "1.0.0",
+  "description": "ADK TypeScript currency exchange agent",
+  "type": "module",
+  "main": "src/currency-agent/agent.ts",
+  "scripts": {
+    "start": "adk run ./src/currency-agent/agent.ts",
+    "web": "adk web ./src/currency-agent"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@google/adk": "1.1.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@google/adk-devtools": "1.1.0"
+  }
+}
